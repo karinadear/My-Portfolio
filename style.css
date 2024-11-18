@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    scroll-behavior: smooth;
+}
+*{
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+.navbar{
+    background-color: white;
+    z-index:99;
+    font-family: 'Poppins';
+}
+
+.navbar-brand{
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.nav-link{
+    color:black;
+    font-size:13px;
+    transition: .4s all ease;
+}
+.nav-link:hover{
+    background-color: grey;
+    color: white;
+    transition: .4s all ease;
+}
+.header-section{
+    text-align: center;
+    font-size:30px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #7c7875;
+}
+.skills, .experience, .education, .portfolio, .contact{
+    padding-top: 100px;
+}
+/* section home */
+.wrapper-home{
+    display:flex;    
+    align-items:center;
+    /* background-color:purple; */
+}
+.container-home{
+    width:80%;
+    height: 100vh;    
+    /* background-color: red; */
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-left:150px;
+}
+.box-text{
+    font-size: 15px;
+}
+.home_name{
+    font-size: 1.6em;
+    font-weight: 700;
+}
+.home_job{
+    font-size: 2.2em;
+    font-weight: 700;
+}
+.home_desc{
+    font-size: .9em;
+    width:21em;
+    line-height: 1.3em;
+}
+.button_home{
+    padding:5px 10px;
+    background-color: #7c7875;
+    color: white;
+    text-decoration:none;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    box-shadow: 0 3px #a6a6a6;
+    margin-top: 80px;
+    cursor: pointer;
+}
+.img_button{
+    transition: .5s;
+}
+.img_button:hover{
+    transform: translateX(5px); 
+}
+.social_media{
+    height: 150px;
+    width: 60px;
+    /* background-color: red; */
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+.icon-sm{
+    width: 40px;
+    transition: .5s;
+}
+
+.icon-sm:hover{
+  transform: scale(1.2);
+}
+ 
+.box-sosmed{
+    align-self:center;
+    justify-self:center;
+    margin-right: 30px;
+    margin-bottom: 50px;
+}
+
+.achievement{
+    font-size:10px;
+}
+.box-year{
+    width: 100px;
+    height: 95px;
+    background: #f8f5f5;
+    margin-left: -380px;
+    margin-top: -10px;
+    border-radius:10px;
+    box-shadow: 0 5px #a6a6a6;
+    transition: 0.5s ease;
+}
+
+.box-project{
+    width: 100px;
+    height: 95px;
+    background: #f8f5f5;
+    position: absolute;
+    margin-left: -130px;
+    margin-top: 70px;
+    border-radius:10px;
+    box-shadow: 0 5px #a6a6a6;
+}
+.wrap-box-acievement{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items:center;
+}
+.number-box{
+    font-size: 25px;
+    font-weight: 700;
+}
+.text-box{
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* section skills */
+.skills{
+    background-color: #ebebeb;
+    height:110vh;
+    display: grid;
+    align-items: baseline;
+   
+}
+.wraper-skills{
+    padding: 0em 13em 0em 13em ;
+    display:flex;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+    flex-wrap:wrap;
+    margin-bottom: 100px;
+}
+.item-skill{
+    background-color: white;
+    width: 110px;
+    height: 150px;
+    border-radius: 3px;
+    box-shadow: 10px 10px #a6a6a6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    padding-bottom: 20px; 
+    transition: .7s;
+}
+.item-skill:nth-child(1) {
+    transition-delay: 600ms;
+}
+.item-skill:nth-child(2) {
+    transition-delay: 400ms;
+}
+.item-skill:nth-child(3) .img-skill{
+    transition-delay: 200ms;
+    width: 80px ;
+    margin-top: 0;
+}
+.item-skill:nth-child(8) {
+    transition-delay: 600ms;
+}
+.item-skill:nth-child(7) {
+    transition-delay: 400ms;
+}
+.item-skill:nth-child(6) {
+    transition-delay: 200ms;
+}
+
+.img-skill{
+    width: 45%;
+    margin-top:22px;
+    justify-self: center;
+}
+.text-skill{
+    padding-top: 8px;
+    width: 90px;
+    height: 40px;
+}
+.name-skill{
+    font-size: 11px;
+    font-weight: 700;
+}
+.level-skill{
+    font-size: 9px;
+}
+/* experience */
+.experience{
+    height:100vh;
+}
+.wraper-experience{
+    display: flex;
+    justify-content: center;
+    gap: 2.5em;
+    align-items:start;
+    flex-wrap: wrap;
+}
+.box-exp{
+    width: 210px;
+    height: 230px;
+    background-color: #ebebeb;
+    box-shadow: 22px 15px #7c7875 ;
+    border-radius: 3px;
+    transition: 1s;
+}
+.box-exp:nth-child(2){
+    transition-delay: 200ms;
+}
+.box-exp:nth-child(3){
+    transition-delay: 400ms;
+}
+.content-exp{
+    padding-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: end;
+    justify-content: center;
+    text-align: center;
+}
+.img_company{
+    width: 150px;
+}
+.job_exp{
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.text-exp{
+    margin-top: 10px;
+}
+.desc-exp{
+    font-size: 8px;
+    width: 175px;
+}
+.time-exp{
+    position: absolute;
+    z-index:99;
+    top:80%;
+    right:5%;   
+   font-size: 8px;
+   padding-top: 30px;
+}
+.date{
+    font-weight: 700;  
+}
+/* education */
+.education{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+
+.wraper-edu{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+.box-collage{
+    display: flex;
+    width: 350px ;
+    height: 140px;
+    background-color: #a6a6a6;
+    border-radius: 5px;
+    box-shadow: -15px 8px #ebebeb;
+   
+}
+.img-edu{
+  width:118px;
+}
+.text-edu{
+    align-self: center;
+}
+.major{
+    font-size: 16px ;
+    font-weight: 700;
+    color: white;
+}
+.box-collage:nth-child(1) .major{
+    width: 50px;
+    height: 50px;
+}
+.collage{
+    font-size: 10px;
+    color: white;
+}
+.date-edu{
+    font-size: 10px;
+    font-weight: 700;
+    color: white;
+}
+.portfolio{
+    height: 110vh;
+    background-color: #7c7875;
+}
+.wraper-portfolio{
+    display: flex;
+    justify-content: center;
+}
+.title-port{
+    font-size: 15px;
+    font-weight: 600;
+}
+.desc-port{
+    font-size: 10px;
+}
+
+.contact{
+    height: 110vh;
+    background-color: #ebebeb;  
+}
+.wraper-contact{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
+.box-contact{
+    width: 80%;
+    height: 300px;
+    background-color: white;
+    border-radius: 5px;
+    display:flex ;
+    justify-content: space-around;
+    align-items: center;
+}
+.form-control{
+    font-size: x-small;
+    background-color: #ebebeb;
+}
+.button-send{
+    border: none;
+    width: 120px;
+    height: 35px;
+    font-size: 10px;
+    font-weight: 600;
+    border-radius: 7px;
+    background-color: black;
+    color: white;
+    transition: .7s;
+}
+.button-send:hover{
+    background-color: #f8f5f5;
+}
+.form-contact{
+    display: grid;
+    column-gap: 1em;
+}
+.modal-body{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    column-gap: 1em;
+}
+/* transition and animation */
+.myProfile{
+    opacity: 0;
+  /*   filter: blur(3px); */
+    transform: translateY(-30px);
+    transition: all .7s;
+}
+.animateProfile{
+    opacity: 1;
+    transform: translateY(0);
+}
+.yearBox{
+     opacity: 1;
+    transform: translateX(-25px);
+    transition: all .7s;
+}
+.animateYearBox{
+      opacity: 1;
+    transform: translateX(0);
+}
+.projectBox{
+     opacity: 1;
+    transform: translateX(25px);
+    transition: all .7s;
+}
+.animateProjectBox{
+      opacity: 1;
+    transform: translateX(0);
+}
+.descHome{
+   opacity: 0; 
+   transform: translateX(-70px);
+   transition: all 1s; 
+}
+.animateDescHome{
+    opacity: 1;
+    transform: translateX(0);
+}
+.myskill{
+    opacity: 0;
+    /* filter: blur(5px); */
+    transform: translateX(-100px);
+    transition: all 1s;
+}
+.animateskill{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+.myskill2{
+    opacity: 0;
+    /* filter: blur(5px); */
+    transform: translateX(100px);
+    transition: all 1s;
+}
+.animateskill2{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+.expBox{
+    opacity: 0;
+    transform: translateY(-40px);
+    transition: all 1s;
+}
+.animateExpBox{
+    opacity: 1;
+    transform: translateY(0);
+}
+.contactBox{
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: all 1s;
+}
+.animateContactBox{
+    opacity: 1;
+    transform: translateX(0);
+}
+.contactBox2{
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 1s;
+}
+.animateContactBox2{
+    opacity: 1;
+    transform: translateX(0);
+}
